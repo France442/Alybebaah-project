@@ -529,6 +529,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -551,6 +556,22 @@ video {
 
 .w-\[80\%\]{
   width: 80%;
+}
+
+.w-\[100\%\]{
+  width: 100%;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
+.w-\[60\%\]{
+  width: 60%;
 }
 
 .justify-center{
@@ -587,6 +608,10 @@ video {
   padding-top: 10%;
 }
 
+.pt-\[5\%\]{
+  padding-top: 5%;
+}
+
 .text-center{
   text-align: center;
 }
@@ -595,8 +620,8 @@ video {
   font-size: 1.5rem;
 }
 
-.text-\[2rem\]{
-  font-size: 2rem;
+.text-\[1\.8rem\]{
+  font-size: 1.8rem;
 }
 
 .text-\[5rem\]{
@@ -691,31 +716,21 @@ body{
 /* home */
 
 .home{
+  display: flex;
   width: 100%;
-  padding-top: 12%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12rem;
   padding-bottom: 3rem;
-  text-align: center;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   font-family: 'Syne', sans-serif;
 }
 
-@media (min-width: 640px){
-  .name{
-    font-size: 0.2rem;
-  }
-}
-
-@media (min-width: 768px){
-  .name{
-    font-size: 5rem;
-  }
-}
-
-@media (min-width: 1024px){
-  .name{
-    font-size: 15rem;
-  }
+.name{
+  width: 200rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .ex_btn{
@@ -788,7 +803,6 @@ body{
 }
 
 .para_me{
-  width: 27rem;
   padding-bottom: 1.25rem;
   font-size: 1.2rem;
   font-family: 'Rubik', sans-serif;
@@ -797,13 +811,26 @@ body{
 .me{
   display: flex;
   width: 100%;
-  flex-direction: row;
+  align-content: center;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+@media (min-width: 640px){
+  .me{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px){
+  .me{
+    flex-direction: row;
+  }
 }
 
 .about_me{
   align-items: center;
-  padding-left: 13rem;
-  padding-top: 13rem;
+  padding-top: 10rem;
 }
 
 .blur_circle2{
@@ -913,15 +940,30 @@ body{
 
 .icon{
   width: 3rem;
-  padding-top: 10%;
+  padding-top: 8%;
 }
 
 /* contact Ends */
+
+@media  (max-width: 640px){
+  .me{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @media (min-width: 640px){
   .sm\:mx-auto{
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .sm\:w-\[80\%\]{
+    width: 80%;
+  }
+
+  .sm\:w-\[70\%\]{
+    width: 70%;
   }
 }
 
