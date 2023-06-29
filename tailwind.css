@@ -937,8 +937,12 @@ body{
   .me{
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .para_me{
+    font-size: 1rem;
   }
 }
 
