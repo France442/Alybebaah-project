@@ -698,10 +698,6 @@ video {
   padding-top: 10%;
 }
 
-.pt-\[5\%\]{
-  padding-top: 5%;
-}
-
 .text-center{
   text-align: center;
 }
@@ -713,10 +709,6 @@ video {
 
 .text-\[1\.5rem\]{
   font-size: 1.5rem;
-}
-
-.text-\[1\.8rem\]{
-  font-size: 1.8rem;
 }
 
 .text-sm{
@@ -940,8 +932,8 @@ body{
   display: flex;
   width: 100%;
   align-content: center;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 @media (min-width: 640px){
@@ -957,8 +949,7 @@ body{
 }
 
 .about_me{
-  align-items: center;
-  padding-top: 10rem;
+  align-self: center;
 }
 
 .blur_circle2{
@@ -1075,6 +1066,11 @@ body{
   font-size: 5rem;
 }
 
+.contact_para{
+  padding-top: 5%;
+  font-size: 1.4rem;
+}
+
 /* contact Ends */
 
 @media  (max-width: 650px){
@@ -1096,12 +1092,41 @@ body{
   .contact_h1{
     font-size: 3rem;
   }
+
+  .contact_para{
+    padding-top: 2%;
+    font-size: 1.2rem;
+  }
 }
 
 @media  (max-width: 489px){
   .me{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 7rem;
+  }
+
+  .para_me{
+    font-size: 1rem;
+  }
+}
+
+@media  (max-width: 413px){
+  .para_me{
+    font-size: 0.7rem;
+  }
+
+  .contact_h1{
+    font-size: 2rem;
+  }
+
+  .work_h1{
+    font-size: 2rem;
+  }
+
+  .contact_para{
+    padding-top: 2%;
+    font-size: 1rem;
   }
 }
 
