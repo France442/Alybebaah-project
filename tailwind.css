@@ -719,10 +719,6 @@ video {
   font-size: 1.8rem;
 }
 
-.text-\[5rem\]{
-  font-size: 5rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1075,9 +1071,13 @@ body{
   padding-top: 8%;
 }
 
+.contact_h1{
+  font-size: 5rem;
+}
+
 /* contact Ends */
 
-@media  (max-width: 640px){
+@media  (max-width: 650px){
   .me{
     display: flex;
     flex-direction: column;
@@ -1087,6 +1087,21 @@ body{
 
   .para_me{
     font-size: 1rem;
+  }
+
+  .work_h1{
+    font-size: 3rem;
+  }
+
+  .contact_h1{
+    font-size: 3rem;
+  }
+}
+
+@media  (max-width: 489px){
+  .me{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
