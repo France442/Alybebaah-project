@@ -5,33 +5,46 @@
     
     <link rel="shortcut icon" href="./images/favicon.ico " type="image/x-icon">
     <script src="https://kit.fontawesome.com/8faf669c27.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8faf669c27.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="tailwind.css">
-  
     <title>Alybebaah</title>
 </head>
 
 
 <body>
-  <!-- navBar -->
-  <div>
-  <header class="navbar">
-    <!-- Logo -->
-    <a href="#home">
-    <img src="./images/bg.png" alt="tesla logo" class="h-14">
+  <!-- Navbar -->
+  
+  <nav class="bg-gray-900 fixed w-full z-20 top-0 left-0 border-b  border-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="index.html" class="flex items-center">
+        <img src="./images/bg.png" class="h-8 mr-3" alt=" Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap"> Alydebaah </span>
     </a>
-    <!-- Nav Links -->
-    <div class="hidden lg:block">
-      <a href="#home" class="nav_link">HOME</a>
-      <a href="#me" class="nav_link">ABOUT ME</a>
-      <a href="#work" class="nav_link">MY WORK</a>
-      <a href="#contact" class="nav_link contact">CONTACT ME</a>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="nav_btns">
+        <li>
+          <a href="#home" class="nav_link">Home</a>
+        </li>
+        <li>
+          <a href="#me" class="nav_link">About</a>
+        </li>
+        <li>
+          <a href="#work" class="nav_link">Services</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav_link">Contact Me</a>
+        </li>
+      </ul>
     </div>
-    <!-- Ext Links -->
-  </header>
-  <!-- Navbar Ends -->
-</div>
+  </div>
+</nav>
+
+<!-- Nav End -->
 
 
 <!-- Home -->
@@ -39,8 +52,8 @@
   
   <div class="home" id="home">
    <img class="name" src="./images/Alydebaah (220 × 40 px) (1).svg" alt="Alybebaah image">
-   <button class="ex_btn">Explore Works <i class="fa-solid fa-arrow-right fa-beat-fade"></i></button>
-    </div>
+   <button class="ex_btn"> <a href="#work">Explore Works <i class="fa-solid fa-arrow-right fa-beat-fade"></i></button>
+   </a> </div>
  <!-- Home ends-->
 
 
@@ -50,7 +63,7 @@
   <div class="me">
   <div  class="about_me">
     <h1 class="about_h1">About me</h1>
-    <p class="para_me"><b>Hello! &#128075 I'm Alybebaah.</b> I am <span class="typing" id="typing">Graphic Designer</span> <br>
+    <p class="para_me"><b>Hello! &#128075 I'm Alybebaah.</b> I am a <span class="typing" id="typing">Graphic Designer</span> <br>
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut consequuntur id dicta perferendis perspiciatis eum amet nihil illo ipsum sapiente?
     </p>
     <button class="about_btn">
@@ -122,7 +135,9 @@
 <hr class="my-6 mx-auto w-[80%] border-gray-200  lg:my-8">
 
 
-  <script src="index.js"></script>  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+<script src="index.js"></script>  
 </body>
 
 </html>
