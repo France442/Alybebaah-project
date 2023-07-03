@@ -1022,8 +1022,7 @@ body{
 }
 
 .image_work{
-  width: 30%;
-  border-radius: 1.5rem;
+  width: 40%;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -1040,6 +1039,7 @@ body{
 }
 
 .image_work img{
+  width: 50rem;
   border-radius: 1rem;
 }
 
@@ -1133,6 +1133,18 @@ body{
 .hover\:bg-gray-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\:pr-6:hover{
+  padding-right: 1.5rem;
+}
+
+.hover\:duration-200:hover{
+  transition-duration: 200ms;
+}
+
+.hover\:ease-out:hover{
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .focus\:outline-none:focus{
