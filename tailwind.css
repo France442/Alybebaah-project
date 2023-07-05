@@ -955,7 +955,7 @@ body{
 .blur_circle2{
   position: absolute;
   left: 5%;
-  top: 100%;
+  top: 90%;
   right: 90%;
   --tw-blur: blur(7rem);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
